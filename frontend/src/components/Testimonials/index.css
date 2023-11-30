@@ -1,0 +1,11 @@
+.testimonials{
+    width: 100vw;
+    height: auto;
+    background: rgb(76, 76, 177);
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}

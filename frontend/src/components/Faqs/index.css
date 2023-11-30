@@ -1,0 +1,78 @@
+.faq{
+    width:100vw;
+    padding-top:50px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    padding-bottom:100px;
+}
+
+.faq-head{
+    display:flex;
+    justify-content: center;
+    
+    color:white;
+    
+}
+.fa{
+    color:#414141;
+    position:relative;
+    font-size:32px;
+    font-weight: bold;display:flex;
+    justify-content: center;
+}
+
+.fa::after{
+    position:absolute;
+    content:'';
+    height:8px;
+    width:60%;
+    bottom:-20px;
+    background-color: #FFD200;
+
+}
+.ques{
+    color:white
+}
+.questions{
+    width:100vw;
+    height:auto;
+    margin-top: 50px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    color:white;
+    overflow: hidden;
+    z-index: 2;
+    background-color: gray;
+    
+}
+.q-1{background-color: green;z-index:4;width:80vw;font-size:24px; }
+.a-1{background-color: green;transform: translateY(100px);transition:0.2s;z-index:1;font-size:0px;opacity: 0;width:80svw}
+
+.active{
+    transform:translateY(0px);
+    animation:anime 0.4s ease-in;
+    font-size: 16px;
+    opacity:1;
+}
+@keyframes anime {
+    from{
+        opacity:0
+    }
+    to{
+        opacity:1;
+       
+    }
+    
+}
+@media only screen and (max-width:500px){
+    .fa::after{
+        bottom:-10px;
+        height:2px;
+    }
+    .fa{
+        font-size:16px;
+    }
+}
